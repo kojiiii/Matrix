@@ -1,8 +1,8 @@
-package matrix;
+package matrix2;
 
 import java.util.Arrays;
 
-public class Matrix_lib {
+public class Matrix2_lib {
 	//private double a[][],b[][];
 
 	//public Matrix_lib(double[][] a, double[][] b) {
@@ -33,7 +33,7 @@ public class Matrix_lib {
 		
 		return answer;
 	}
-	public double [][] getTranspose (double a [][] ){  //転置行列
+	public double [][] getTranspose (double a [][]){  //転置行列
 		double t[][] = new double [a[0].length][a.length];
 			for(int i = 0;i < a[0].length;i++) {
 				for(int j = 0; j < a.length;j++) {
