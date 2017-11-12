@@ -1,8 +1,8 @@
-package matrix2;
+package matrix3;
 
 import java.util.Arrays;
 
-public class Matrix2_lib {
+public class Matrix3_lib {
 	//private double a[][],b[][];
 
 	//public Matrix_lib(double[][] a, double[][] b) {
@@ -96,6 +96,19 @@ public class Matrix2_lib {
 		answer = this.getTranspose(answer);
 		return answer;
 	}
+	
+	public double[] getSolution(double d[][],double e[]) {
+		double ans[] = new double[d.length];
+		d = this.getInverse(d);
+		
+		for (int i = 0; i < d.length; i++) {
+			for(int j = 0; j < d.length; j++) {
+				ans[i] += d[i][j]*e[j];
+			}
+		}
+		return ans;
+	}
+	
 	
 
 }
